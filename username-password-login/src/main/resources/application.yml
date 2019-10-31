@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    url: localhost:3306/security?serverTime=UTC
+    username: root
+    password: 123455
+  resources:
+    static-locations: classpath:/templates/
+  mvc:
+    view:
+      suffix: .html
