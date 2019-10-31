@@ -26,4 +26,11 @@ public class SecurityController {
     public String user() {
         return "/user";
     }
+
+
+    @GetMapping("/index")
+    public String index() {
+        return "/index";
+    }
+
 }
