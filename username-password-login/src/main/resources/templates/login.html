@@ -9,9 +9,34 @@
 <!--<h3 th:text="${msg}" style="color: red"></h3>-->
 
 <form method="post" action="/toLogin">
-    用户名：<input type="text" name="username"/><br/>
-    密 码：<input type="password" name="password"/><br/>
-    <input type="submit" value="登录"/>
+    <table>
+        <tr>
+            <td>用户名：<br/></td>
+            <td><input type="text" name="username"/></td>
+        </tr>
+        <tr>
+            <td>密码：<br/></td>
+            <td><input type="password" name="password"/></td>
+        </tr>
+        <tr>
+            <td>验证码</td>
+            <td><input type="text" name="imageCode"/>
+            <td><img src="/code/image"></td>
+        </tr>
+        <tr>
+            <td>短信验证码</td>
+            <td><input type="text" name="smsCode"/>
+            <td><a href="/code/sms" >发送短信验证码</a> </td>
+        </tr>
+        <tr>
+            <td>记住密码</td>
+            <td><input type="checkbox" value="true" name="remember-me"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="登录"/></td>
+        </tr>
+    </table>
+
 </form>
 </body>
 </html>
